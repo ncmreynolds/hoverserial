@@ -155,7 +155,7 @@ void hoverserial::setSpeed(int16_t value) {	//Set speed in speed & steer mode
 		requested_speed_ = value;
 		tank_steer_ = false;
 		if(millis() - last_command_sent_ > minimum_command_send_interval_) {
-			last_command_sent_ = millis();
+			last_command_sent_ = millis() - command_send_interval_;
 		}
 	}
 }
@@ -164,7 +164,7 @@ void hoverserial::setSteer(int16_t value) {	//Set speed in speed & steer mode
 		requested_steer_ = value;
 		tank_steer_ = false;
 		if(millis() - last_command_sent_ > minimum_command_send_interval_) {
-			last_command_sent_ = millis();
+			last_command_sent_ = millis() - command_send_interval_;
 		}
 	}
 }
@@ -174,7 +174,7 @@ void hoverserial::setSpeed(int16_t  value1, int16_t  value2) {	//Set separate sp
 		requested_steer_ = value2;
 		tank_steer_ = true;
 		if(millis() - last_command_sent_ > minimum_command_send_interval_) {
-			last_command_sent_ = millis();
+			last_command_sent_ = millis() - command_send_interval_;
 		}
 	}
 }
