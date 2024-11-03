@@ -21,6 +21,7 @@ void setup() {
 }
 
 void loop() {
+    hoverboard.housekeeping();
     if(hoverboard.isConnected())
     {
         hoverboard.setSpeed(SPEED);
