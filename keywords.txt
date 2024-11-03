@@ -1,0 +1,13 @@
+hoverserial	KEYWORD1
+
+//Setup
+begin	KEYWORD2
+debug	KEYWORD2
+housekeeping	KEYWORD2
+isConnected	KEYWORD2
+setSpeed	KEYWORD2
+setSteer	KEYWORD2
+getSpeedRight	KEYWORD2
+getSpeedLeft	KEYWORD2
+getBatteryVoltage	KEYWORD2
+getBoardTemperature	KEYWORD2
